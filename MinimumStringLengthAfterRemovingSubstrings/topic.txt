@@ -1,0 +1,61 @@
+English:
+You are given a string s consisting only of uppercase English letters.
+You can apply some operations to this string where, in one operation, you can remove any occurrence of one of the substrings "AB" or "CD" from s.
+Return the minimum possible length of the resulting string that you can obtain.
+Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
+
+Example 1:
+Input: s = "ABFCACDB"
+Output: 2
+Explanation: We can do the following operations:
+- Remove the substring "ABFCACDB", so s = "FCACDB".
+- Remove the substring "FCACDB", so s = "FCAB".
+- Remove the substring "FCAB", so s = "FC".
+So the resulting length of the string is 2.
+It can be shown that it is the minimum length that we can obtain.
+
+Example 2:
+
+Input: s = "ACBBD"
+Output: 5
+Explanation: We cannot do any operations on the string so the length remains the same.
+Constraints:
+
+    1 <= s.length <= 100
+    s consists only of uppercase English letters.
+	
+Tiếng Việt:
+Bạn được cung cấp một chuỗi s chỉ bao gồm các chữ cái tiếng Anh viết hoa.
+Bạn có thể thực hiện một số thao tác trên chuỗi này, trong mỗi lần thao tác, bạn có thể xóa bất kỳ lần xuất hiện nào của một trong các chuỗi con "AB" hoặc "CD" khỏi chuỗi s.
+Yêu cầu của bài toán là trả về độ dài nhỏ nhất có thể của chuỗi kết quả mà bạn có thể thu được sau khi thực hiện các thao tác xóa này.
+Lưu ý rằng sau khi xóa một chuỗi con, chuỗi có thể nối lại với nhau và có thể tạo ra các chuỗi con mới "AB" hoặc "CD", bạn có thể tiếp tục xóa các chuỗi này nếu chúng xuất hiện.
+
+Ví dụ:
+    Ví dụ 1:
+
+    Input: s = "ABFCACDB"
+
+    Output: 2
+
+    Giải thích:
+        Ban đầu, chuỗi là "ABFCACDB".
+        Xóa chuỗi con "AB", ta được chuỗi "FCACDB".
+        Xóa chuỗi con "CD", ta được chuỗi "FCAB".
+        Xóa chuỗi con "AB", ta được chuỗi "FC".
+        Kết quả cuối cùng là chuỗi có độ dài 2.
+
+    Ta không thể làm ngắn hơn được nữa, vì vậy độ dài nhỏ nhất là 2.
+
+    Ví dụ 2:
+
+    Input: s = "ACBBD"
+
+    Output: 5
+
+    Giải thích:
+        Ta không thể xóa được bất kỳ chuỗi con nào là "AB" hoặc "CD", nên độ dài của chuỗi vẫn giữ nguyên là 5.
+
+Ràng buộc:
+
+    1 <= s.length <= 100
+    Chuỗi s chỉ bao gồm các chữ cái viết hoa tiếng Anh.
